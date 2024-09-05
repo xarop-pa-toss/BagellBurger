@@ -68,37 +68,39 @@ for k, v in dict.items():
 
 ## Specification
 The app needs to have items of all kinds for the user to select. But we also want to allow a degree of customization, not everyone wants onions on their burger!
->- Create and use a file in your folder with the corresponding name:
->   Bagell - desserts.py
->   Killua - hamburguers.py
->   Insanity - drinks.py
->   Pluto - extras.py
->- Do not include a main function, as this file will be imported as a module onto another file later on.
->
->Your program __must__:
->1 - Have at least one Dictionary that contains relevant food items. The Dictionary can have any keys you find relevant to the category that was assigned to you, but the following must exist: "name" and "price".
->2 - Have functions that allow __creating and deleting items__ (kvp's) as well as __editing individual keys and values__ in that Dictionary.
->    These functions must return True if successful, or False if unsuccessful. We will learn proper error handling later.
->
->The objective is to create a module (your .py file) that will be used by the larger application to control the items on the BagellBurger menu.
->You are free to include whatever you want and use whichever technique you like, as long as you meet the requirements above.
->I recommend looking into the bonus section below as well.
+- Create and use a file in your folder with the corresponding name:
+   Bagell - desserts.py
+   Killua - hamburguers.py
+   Insanity - drinks.py
+   Pluto - extras.py
+- Do not include a main function, as this file will be imported as a module onto another file later on.
+
+Your program __must__:
+1 - Have at least one Dictionary that contains relevant food items. The Dictionary can have any keys you find relevant to the category that was assigned to you, but the following must exist: "name" and "price".
+2 - Have functions that allow __creating and deleting items__ (kvp's) as well as __editing individual keys and values__ in that Dictionary.
+    These functions must return True if successful, or False if unsuccessful. We will learn proper error handling later.
+
+The objective is to create a module (your .py file) that will be used by the larger application to control the items on the BagellBurger menu.
+You are free to include whatever you want and use whichever technique you like, as long as you meet the requirements above.
+I recommend looking into the bonus section below as well.
 
 # GOOD LUCK 😁
 
+
 ### BONUS - Multi-dimensional Dictionaries
-# The Values don't have to be strings or ints. You can actually have Lists or other Dictionaries as the value in a kvp.
+```python
+#The Values don't have to be strings or ints. You can actually have Lists or other Dictionaries as the value in a kvp.
 items_dict = {
     "gardening_hose": {"color": "green", "length": 30, "price": 25.99},
     "chain_fence": {"color": "silver", "length": 100, "price": 120.50},
 }
-# To access these inner dictionaries you have do what is called a "nested" loop. One for the outer dictionary, and another for the inner dictionaries.
+#To access these inner dictionaries you have do what is called a "nested" loop. One for the outer dictionary, and another for the inner dictionaries.
 for item, details in items_dict.items():
     print(f"Item: {item}")
     for key, value in details.items():
         print(f"  {key}: {value})
 
-# This prints the following
+#This prints the following
 Item: gardening_hose
   color: green
   length: 30
@@ -112,3 +114,4 @@ Item: chain_fence
 On line 1, we do a for loop that will run through each kvp in the items_dict dictionary. For each iteration (run of the loop), the Key will be called "item", and it's Value will be called "details". Remember, the Value being returned is in itself a dictionary (with color, length and price). It's called "details" to match the theme and purpose.
 On line 2, we print the current "item" (key of the outer dictionary the loop is currently at).
 On lines 3 and 4, we loop through the "details" (or Value) of the "key" (or Item) the outer loop is currently at and print all keys and values.
+```
