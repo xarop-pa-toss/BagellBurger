@@ -27,7 +27,5 @@ def dictionary_browser():
         elif action == "quit":
             print("It was nice seeing you today :)!")
             break
-        
-        
 
 dictionary_browser()
