@@ -69,9 +69,9 @@ for k, v in dict.items():
 ## Specification
 The app needs to have items of all kinds for the user to select. But we also want to allow a degree of customization, not everyone wants onions on their burger!
 - Create and use a file in your folder with the corresponding name:
+   Killua - hamburgers.py
+   Pluto - sides.py (stuff like onion rings, nuggets, fries, etc)
    Bagell - desserts.py
-   Killua - hamburguers.py
-   Pluto - extras.py
    Insanity - drinks_soft.py
    ROX - drinks_alcoholic.py
 - Do not include a main function, as this file will be imported as a module onto another file later on.
