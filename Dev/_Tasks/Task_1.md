@@ -71,8 +71,9 @@ The app needs to have items of all kinds for the user to select. But we also wan
 - Create and use a file in your folder with the corresponding name:
    Bagell - desserts.py
    Killua - hamburguers.py
-   Insanity - drinks.py
    Pluto - extras.py
+   Insanity - drinks_soft.py
+   ROX - drinks_alcoholic.py
 - Do not include a main function, as this file will be imported as a module onto another file later on.
 
 Your program __must__:
